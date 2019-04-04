@@ -28,7 +28,6 @@ template<typename T>   T sub(T x, T y) { return add(x, -y + MOD);}
 template<typename T>   T gcd(T a, T b) { return b ? gcd(b, a % b) : a;}
 template<typename T>   T lcm(T a, T b) { return a / gcd(a, b) * b;}
 
-
 int phi(int n) {
     int result = n;
     for (int i = 2; i * i <= n; ++i) {
