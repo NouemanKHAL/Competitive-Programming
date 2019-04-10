@@ -40,9 +40,6 @@ void bfs() {
 
 	while (!q.empty()) {
 		int u = q.front(); 	q.pop();
-
-		vis[u] = true;
-
 		for (auto v : adj[u]) {
 			if (vis[v]) continue;
 			level[v] = level[u] + 1;
@@ -57,9 +54,7 @@ int main() {
 	ios_base::sync_with_stdio(false);
 	cin.tie(0);
 	cout.tie(0);
-
-	memset(vis, 0, sizeof vis);
-
+	
 	cin >> n;
 
 	for (int i = 1 ; i <= n ; ++i) {
