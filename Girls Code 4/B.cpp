@@ -43,7 +43,7 @@ void update(int x, int y) {
 	for (int i = 0; i < 4; ++i) {
 		int xx = x + dx[i];
 		int yy = y + dy[i];
-		if (isValid(xx, yy) && g[xx][yy] != 'x' && g[xx][yy] != '.') {
+		if (isValid(xx, yy) && g[xx][yy] == 'o') {
 			g[xx][yy] = 'x';
 			rot.emplace_back(xx, yy);
 		}
